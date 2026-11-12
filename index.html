@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <script>document.documentElement.classList.add("js")</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZAMFIT — Gimnasio en Santa Cruz de Tenerife</title>
+  <meta name="description" content="ZAMFIT, gimnasio en Avenida Islas Canarias 45, Santa Cruz de Tenerife. Propuesta de web con clases, horario y alta online.">
+  <meta name="theme-color" content="#141312">
+  <meta name="robots" content="noindex, nofollow">
+                            <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23141312'/><text x='16' y='22' text-anchor='middle' font-family='Arial Black,Arial' font-weight='900' font-size='13' fill='%23d8b98c'>ZF</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="progreso" id="progreso" aria-hidden="true"></div>
+  <div class="grano" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a href="#inicio" class="logo">ZAMFIT</a>
+    <nav class="nav-links" id="menu">
+      <a href="#clases">Clases</a>
+      <a href="#horario">Horario</a>
+      <a href="#donde">Dónde estamos</a>
+      <a href="#precios">Precios</a>
+      <a href="#empezar" class="btn btn-arena btn-sm">Apúntate</a>
+    </nav>
+    <button class="hamburguesa" id="hamburguesa" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <!-- PORTADA -->
+    <section class="hero" id="inicio">
+      <div class="hero-video" aria-hidden="true">
+        <video id="video" muted loop playsinline preload="none" poster="img/portada.jpg" data-movil="video-movil.mp4" data-escritorio="video-escritorio.mp4"></video>
+      </div>
+      <div class="resplandor r1" aria-hidden="true"></div>
+
+      <div class="hero-contenido">
+        <p class="sobre-titulo">Gimnasio · Avenida Islas Canarias 45</p>
+        <h1><span class="linea"><span>Apúntate</span></span><span class="linea"><span class="degradado"><em>desde el móvil.</em></span></span></h1>
+        <p class="hero-texto">Mira las clases, el horario y los precios, y hazte socio sin tener que pasarte por el centro. Todo en un minuto.</p>
+        <div class="botones">
+          <a href="#empezar" class="btn btn-arena">Quiero apuntarme</a>
+          <a href="#clases" class="btn btn-claro">Ver clases</a>
+        </div>
+        <p class="aviso-portfolio">Propuesta de diseño para ZAMFIT · precios, horarios y fotos son de ejemplo</p>
+      </div>
+
+      <aside class="proxima" id="proxima">
+        <p class="proxima-etq"><span class="punto"></span><span id="proxima-cuando">Próxima clase</span></p>
+        <p class="proxima-clase" id="proxima-clase">—</p>
+        <p class="proxima-info" id="proxima-info"></p>
+        <div class="plazas" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </aside>
+    </section>
+
+    <!-- CIFRAS -->
+    <section class="cifras">
+      <div class="aparecer"><strong class="degradado" data-contar="12">0</strong><span>plazas por clase, reservas desde el móvil</span></div>
+      <div class="aparecer"><strong class="degradado" data-contar="6">0</strong><span>tipos de clase distintos</span></div>
+      <div class="aparecer"><strong class="degradado" data-contar="17" data-sufijo="h">0</strong><span>abierto cada día entre semana</span></div>
+      <div class="aparecer"><strong class="degradado" data-contar="7" data-sufijo=" días">0</strong><span>de prueba gratis</span></div>
+    </section>
+
+    <!-- CLASES -->
+    <section class="seccion" id="clases">
+      <div class="resplandor r2" aria-hidden="true"></div>
+      <div class="cabecera aparecer">
+        <p class="sobre-titulo">Clases</p>
+        <h2>Seis clases, <em class="degradado">para todos los niveles</em></h2>
+      </div>
+      <div class="clases">
+        <article class="clase aparecer" tabindex="0">
+          <picture><source srcset="img/fuerza.webp" type="image/webp"><img src="img/fuerza.jpg" alt="Mujer preparándose para levantar una barra con discos" loading="lazy"></picture>
+          <div class="clase-capa">
+            <div class="clase-top"><span class="nivel">Medio</span><span class="duracion">60 min</span></div>
+            <h3>Fuerza</h3>
+            <p>Aprende a levantar con buena técnica y gana fuerza semana a semana.</p>
+          </div>
+        </article>
+        <article class="clase aparecer" tabindex="0">
+          <picture><source srcset="img/hiit.webp" type="image/webp"><img src="img/hiit.jpg" alt="Dos personas haciendo ejercicio con cajones de salto" loading="lazy"></picture>
+          <div class="clase-capa">
+            <div class="clase-top"><span class="nivel">Intenso</span><span class="duracion">45 min</span></div>
+            <h3>HIIT</h3>
+            <p>Intervalos cortos de mucho esfuerzo. Ideal si tienes poco tiempo.</p>
+          </div>
+        </article>
+        <article class="clase aparecer" tabindex="0">
+          <picture><source srcset="img/spinning.webp" type="image/webp"><img src="img/spinning.jpg" alt="Instructora dando una clase de spinning a un grupo" loading="lazy"></picture>
+          <div class="clase-capa">
+            <div class="clase-top"><span class="nivel">Medio</span><span class="duracion">40 min</span></div>
+            <h3>Spinning</h3>
+            <p>Bici con música. Tú marcas la resistencia, así que vale para cualquiera.</p>
+          </div>
+        </article>
+        <article class="clase aparecer" tabindex="0">
+          <picture><source srcset="img/boxeo.webp" type="image/webp"><img src="img/boxeo.jpg" alt="Entrenador enseñando a una mujer a golpear el saco" loading="lazy"></picture>
+          <div class="clase-capa">
+            <div class="clase-top"><span class="nivel">Intenso</span><span class="duracion">50 min</span></div>
+            <h3>Boxeo</h3>
+            <p>Saco, comba y técnica básica. No hace falta experiencia.</p>
+          </div>
+        </article>
+        <article class="clase aparecer" tabindex="0">
+          <picture><source srcset="img/cross.webp" type="image/webp"><img src="img/cross.jpg" alt="Mujer entrenando con cuerdas de batalla" loading="lazy"></picture>
+          <div class="clase-capa">
+            <div class="clase-top"><span class="nivel">Intenso</span><span class="duracion">55 min</span></div>
+            <h3>Cross</h3>
+            <p>Un entreno distinto cada día que mezcla fuerza y cardio.</p>
+          </div>
+        </article>
+        <article class="clase aparecer" tabindex="0">
+          <picture><source srcset="img/movilidad.webp" type="image/webp"><img src="img/movilidad.jpg" alt="Personas estirando en un estudio con suelo de madera" loading="lazy"></picture>
+          <div class="clase-capa">
+            <div class="clase-top"><span class="nivel">Suave</span><span class="duracion">45 min</span></div>
+            <h3>Movilidad</h3>
+            <p>Estiramientos y control del cuerpo. Perfecta para empezar o recuperarte.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- POR QUÉ -->
+    <section class="seccion porque">
+      <div class="porque-foto aparecer">
+        <picture><source srcset="img/entrenador.webp" type="image/webp"><img src="img/entrenador.jpg" alt="Entrenador corrigiendo a una alumna en la máquina de remo" loading="lazy" data-parallax="0.08"></picture>
+        <div class="porque-sello">
+          <strong class="degradado">24/7</strong>
+          <span>tu cuenta y tus reservas, siempre a mano</span>
+        </div>
+      </div>
+      <div class="porque-texto">
+        <div class="aparecer">
+          <p class="sobre-titulo">Por qué ZAMFIT</p>
+          <h2>Menos papeleos, <em class="degradado">más entreno</em></h2>
+        </div>
+        <ul class="razones">
+          <li class="aparecer">
+            <span class="icono"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c1-4 4-6 7-6s6 2 7 6"/></svg></span>
+            <div><strong>Te apuntas sin ir al centro</strong><p>Eliges tu cuota y te das de alta desde casa, en un minuto.</p></div>
+          </li>
+          <li class="aparecer">
+            <span class="icono"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg></span>
+            <div><strong>Reservas desde el móvil</strong><p>Eliges la clase y la hora. Ves cuántas plazas quedan.</p></div>
+          </li>
+          <li class="aparecer">
+            <span class="icono"><svg viewBox="0 0 24 24"><path d="M4 17l5-5 4 4 7-8"/><path d="M15 8h5v5"/></svg></span>
+            <div><strong>Todo claro</strong><p>Horario, precios y dudas resueltas en una sola página.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="galeria" aria-label="Fotos del gimnasio">
+      <div class="galeria-pista">
+        <picture><source srcset="img/galeria-1.webp" type="image/webp"><img src="img/galeria-1.jpg" alt="Mujer levantando una barra" loading="lazy"></picture>
+        <picture><source srcset="img/galeria-2.webp" type="image/webp"><img src="img/galeria-2.jpg" alt="Pareja entrenando con cuerdas" loading="lazy"></picture>
+        <picture><source srcset="img/galeria-3.webp" type="image/webp"><img src="img/galeria-3.jpg" alt="Grupo haciendo ejercicio juntos" loading="lazy"></picture>
+        <picture><source srcset="img/galeria-4.webp" type="image/webp"><img src="img/galeria-4.jpg" alt="Sala de boxeo con sacos" loading="lazy"></picture>
+        <picture><source srcset="img/boxeo.webp" type="image/webp"><img src="img/boxeo.jpg" alt="" loading="lazy" aria-hidden="true"></picture>
+        <picture><source srcset="img/galeria-1.webp" type="image/webp"><img src="img/galeria-1.jpg" alt="" loading="lazy" aria-hidden="true"></picture>
+        <picture><source srcset="img/galeria-2.webp" type="image/webp"><img src="img/galeria-2.jpg" alt="" loading="lazy" aria-hidden="true"></picture>
+        <picture><source srcset="img/galeria-3.webp" type="image/webp"><img src="img/galeria-3.jpg" alt="" loading="lazy" aria-hidden="true"></picture>
+        <picture><source srcset="img/galeria-4.webp" type="image/webp"><img src="img/galeria-4.jpg" alt="" loading="lazy" aria-hidden="true"></picture>
+        <picture><source srcset="img/boxeo.webp" type="image/webp"><img src="img/boxeo.jpg" alt="" loading="lazy" aria-hidden="true"></picture>
+      </div>
+    </section>
+
+    <!-- HORARIO -->
+    <section class="seccion" id="horario">
+      <div class="cabecera aparecer">
+        <p class="sobre-titulo">Horario</p>
+        <h2>¿Qué hay <em class="degradado">cada día?</em></h2>
+      </div>
+      <div class="panel aparecer">
+        <div class="dias" id="dias" role="tablist" aria-label="Días de la semana"></div>
+        <ul class="horario" id="lista-horario" role="tabpanel" tabindex="0"><noscript><li>Activa JavaScript para ver el horario.</li></noscript></ul>
+      </div>
+    </section>
+
+    <!-- DÓNDE -->
+    <section class="seccion" id="donde">
+      <div class="cabecera aparecer">
+        <p class="sobre-titulo">Dónde estamos</p>
+        <h2>Pásate a <em class="degradado">conocernos</em></h2>
+      </div>
+      <div class="donde aparecer">
+        <div>
+          <p class="donde-dir">Avenida Islas Canarias, 45<br>38007 Santa Cruz de Tenerife</p>
+          <p class="gris">Si prefieres verlo en persona antes de apuntarte, estamos aquí.</p>
+        </div>
+        <a class="btn btn-arena" href="https://www.google.com/maps/search/?api=1&query=Avenida+Islas+Canarias+45+38007+Santa+Cruz+de+Tenerife" target="_blank" rel="noopener">Abrir en Google Maps</a>
+      </div>
+    </section>
+
+    <!-- PRECIOS -->
+    <section class="seccion" id="precios">
+      <div class="resplandor r3" aria-hidden="true"></div>
+      <div class="cabecera aparecer">
+        <p class="sobre-titulo">Precios</p>
+        <h2>Elige tu cuota <em class="degradado">y empieza hoy</em></h2>
+      </div>
+      <div class="planes">
+        <article class="plan aparecer">
+          <h3>Sala</h3>
+          <p class="precio">29 €<span>/mes</span></p>
+          <p class="para">Para entrenar por tu cuenta.</p>
+          <ul>
+            <li>Acceso a la sala en todo el horario</li>
+            <li>Vestuarios y taquilla</li>
+          </ul>
+          <a href="#empezar" class="btn btn-claro">Elegir Sala</a>
+        </article>
+        <article class="plan plan-destacado aparecer">
+          <p class="insignia">El más elegido</p>
+          <h3>Clases</h3>
+          <p class="precio">45 €<span>/mes</span></p>
+          <p class="para">Para venir a clases todas las veces que quieras.</p>
+          <ul>
+            <li>Todo lo del plan Sala</li>
+            <li>Clases ilimitadas</li>
+            <li>Reserva desde el móvil</li>
+          </ul>
+          <a href="#empezar" class="btn btn-arena">Elegir Clases</a>
+        </article>
+        <article class="plan aparecer">
+          <h3>Personal</h3>
+          <p class="precio">89 €<span>/mes</span></p>
+          <p class="para">Para tener un plan hecho a tu medida.</p>
+          <ul>
+            <li>Todo lo del plan Clases</li>
+            <li>4 sesiones con tu entrenador</li>
+            <li>Plan de comidas</li>
+          </ul>
+          <a href="#empezar" class="btn btn-claro">Elegir Personal</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CÓMO EMPEZAR -->
+    <section class="empezar-fondo" id="empezar">
+      <picture><source srcset="img/grupo.webp" type="image/webp"><img class="empezar-img" src="img/grupo.jpg" alt="" loading="lazy" data-parallax="0.12"></picture>
+      <div class="seccion empezar">
+        <div class="aparecer">
+          <p class="sobre-titulo">Cómo empezar</p>
+          <h2>Hazte socio <em class="degradado">en 3 pasos</em></h2>
+          <ol class="pasos">
+            <li><strong>Déjanos tus datos</strong><span>Solo tu nombre y tu email.</span></li>
+            <li><strong>Te escribimos</strong><span>Para confirmar tu cuota y tu primer día.</span></li>
+            <li><strong>Vienes a entrenar</strong><span>Con tu cuenta ya lista, sin colas ni papeles.</span></li>
+          </ol>
+        </div>
+        <form id="formulario" class="aparecer" novalidate>
+          <label>Nombre<input type="text" name="nombre" required autocomplete="name"></label>
+          <label>Email<input type="email" name="email" required autocomplete="email"></label>
+          <label>¿Qué clase te apetece probar?
+            <select name="clase">
+              <option>Todavía no lo sé</option>
+              <option>Fuerza</option><option>HIIT</option><option>Spinning</option>
+              <option>Boxeo</option><option>Cross</option><option>Movilidad</option>
+            </select>
+          </label>
+          <button type="submit" class="btn btn-arena">Quiero apuntarme</button>
+          <p class="nota-demo">Formulario de demostración: aún no se envía ningún dato.</p>
+          <p class="aviso" id="aviso" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- DUDAS -->
+    <section class="seccion" id="dudas">
+      <div class="cabecera aparecer">
+        <p class="sobre-titulo">Dudas</p>
+        <h2>Preguntas <em class="degradado">frecuentes</em></h2>
+      </div>
+      <div class="faq aparecer">
+        <details>
+          <summary>¿Necesito tener experiencia?</summary>
+          <p>No. Todas las clases tienen una versión más fácil y el entrenador te ayuda desde el primer día.</p>
+        </details>
+        <details>
+          <summary>¿Cómo me doy de baja?</summary>
+          <p>[A CONFIRMAR CON ZAMFIT] Ejemplo: avisas por la web o en recepción antes de fin de mes.</p>
+        </details>
+        <details>
+          <summary>¿Hay que reservar las clases?</summary>
+          <p>Sí, desde el móvil. Así sabes cuántas plazas quedan antes de venir.</p>
+        </details>
+        <details>
+          <summary>¿Dónde aparco?</summary>
+          <p>[A CONFIRMAR CON ZAMFIT] Aquí irá la info de aparcamiento cerca del centro.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie" id="contacto">
+    <div class="pie-grid">
+      <div>
+        <p class="logo">ZAMFIT</p>
+        <p class="gris">Gimnasio en Santa Cruz de Tenerife.</p>
+      </div>
+      <div>
+        <p class="pie-titulo">Dirección</p>
+        <p class="gris">Avenida Islas Canarias, 45<br>38007 Santa Cruz de Tenerife</p>
+      </div>
+      <div>
+        <p class="pie-titulo">Horario</p>
+        <p class="gris">[HORARIO REAL A CONFIRMAR]</p>
+      </div>
+    </div>
+    <p class="pie-gigante degradado" aria-hidden="true">ZAMFIT</p>
+    <p class="pie-nota">Propuesta de diseño web para ZAMFIT, hecha por <a href="https://casaiglesias.es/">Casa Iglesias</a>. Datos de ejemplo hasta confirmarlos. Fotos y vídeo: Pexels.</p>
+  </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
