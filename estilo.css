@@ -362,3 +362,8 @@ h2 { font-size: clamp(1.9rem, 4.2vw, 3.2rem); line-height: 1; }
 
 .donde{display:flex;justify-content:space-between;align-items:center;gap:2rem;flex-wrap:wrap;padding:2rem 0;border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
 .donde-dir{font-family:var(--serif);font-weight:800;text-transform:uppercase;font-size:clamp(1.4rem,3vw,2.2rem);line-height:1.15;margin-bottom:.6rem}
+
+/* Logo real de ZAMFIT (sello redondo de su Instagram) */
+.logo-img { display: inline-flex; align-items: center; padding: 0; line-height: 0; }
+.logo-img img { width: 48px; height: 48px; border-radius: 50%; display: block; box-shadow: 0 0 0 1px rgba(216,185,140,.35); }
+.pie .logo-img img { width: 72px; height: 72px; }
